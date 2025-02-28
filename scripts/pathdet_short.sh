@@ -32,10 +32,10 @@ while [ $# -gt 0 ] ; do
   esac
 done
 
-if [ -z "$FQ1" ] || [ -z "FQ2" ] || [ -z "$OUT" ]; then
+if [ -z "$FQ1" ] || [ -z "$FQ2" ] || [ -z "$OUT" ]; then
   echo "you need to supply path to fastq using -1 and -2 option, and output name using -o option"
   exit
-elif [ ! -f "$FQ1" ] || [ ! -f "FQ2" ]; then
+elif [ ! -f "$FQ1" ] || [ ! -f "$FQ2" ]; then
   echo "fastq file does NOT exists"
   exit
 fi
@@ -218,7 +218,7 @@ function p02_hgs() {
 }
 
 function rapid() {
-  if [ -f "$path_rapid/.done" ] ; then
+  if [ -f "$path_rapid/.done" ]; then
     echo "Rapid process already finished, skipped"
     return
   fi
