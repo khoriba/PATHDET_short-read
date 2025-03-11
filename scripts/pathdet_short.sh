@@ -26,7 +26,7 @@ while [ $# -gt 0 ] ; do
                      shift ;;
                  * ) echo "ERROR : illegal option"
                      echo "you need to supply path to fastq using -1 and -2 option, and output name using -o/--out option"
-                     echo "you could overwrite thread number using -t/--threads option, 64 by default"
+                     echo "you could overwrite thread number using -t/--threads option, 20 by default"
                      echo "you could overwrite split number using -s/--split option, 50000 by default"
                      exit ;;
   esac
@@ -54,7 +54,8 @@ START=`date '+%y%m%d%H%M%S'`
 TIMEA=`date +%s`
 
 ## Directory PATH
-path0=output/$OUT
+path0=$OUT
+OUT=`basename $OUT`
 path1=$path0/${OUT}_qc
 path2=$path0/${OUT}_hgs
 path3=$path0/${OUT}_blast
@@ -82,7 +83,7 @@ export TAXONKIT_DB=$datadir/taxonkit/taxdump
 # load spark module
 spark=$CONDA_PREFIX/opt/git/SparK/SparK.py
 
-
+set -u
 
 function p01_qc() {
   if [ -f "$path1/.done" ]; then
@@ -106,11 +107,16 @@ function p01_qc() {
   out4=$path1/${OUT}_trimmed2_R2.fastq.gz
 
   ##QC
+  if [ "$THREADS" -gt 16 ]; then
+    fastp_thread=16
+  else
+    fastp_thread=$THREADS
+  fi
   fastp \
     -i ${FQ1} -I ${FQ2} -o $out1 -O $out2 \
     -h $path1/${OUT}_fp.html -j $path1/${OUT}.json \
     -3 -q 30 -n 20 -l 80 -f 15 -t 1 -T 1 \
-    --thread $THREADS 
+    --thread $fastp_thread 
 
   bbduk.sh \
     in=$out1 in2=$out2 \
