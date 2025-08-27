@@ -4,8 +4,6 @@ PATHDET pipeline for short-read sequencing data
 
 ![](https://pathdet.hgc.jp/files/static/images/pathdet_logo.png)
 
-# `Home` `Analysis` `Manual` `Result`
-
 ## Version 2.0
 PATHDET is a web application for “PATHogen DETection” from extracellular DNA/RNA viahigh-throughput sequencing data given by users. The PATHDET pipeline, step-by-step procedures described in the figure below, detects pathogenic microorganisms from the organisms (humans, animals, plants, etc.) with infections. Also, the pipeline is applicable to investigation of contaminants of microorganisms from the samples of biological experiments and clinical instruments. Users can obtain a list of the microorganisms populating in the sample through the PATHDET execution, which initiates by uploading the sequence data to a web server. The PATHDET provides two types of reports: an interactive result view on a web browser and a downloadable detailed report. Additionally, users can access a brief summary of the rapid pathogen search, which is usually available in ten minutes.
 
