@@ -241,6 +241,29 @@ Please cite the following if you are using PATHDET for long-read:
 [Horiba K, Torii Y, Aizawa Y, Yamaguchi M, Haruta K, Okumura T, Suzuki T, Kawano Y, Kawada JI, Hara S, Saitoh A, Giske CG, Ogi T, Ito Y. Performance of Nanopore and Illumina metagenomic sequencing for pathogen detection and transcriptome analysis in infantile central nervous system infections. Open Forum Infect Dis. 2022 ofab504. doi: 10.1093/ofid/ofac504 .](url)
 
 <br>
+## Dependencies
+
+PATHDET requires a conda environment with the following software tools installed.  
+These dependencies ensure reproducibility of the pipeline.
+
+| Software / Package       | Version    | Purpose / Notes |
+|---------------------------|------------|-----------------|
+| **seqkit**               | 2.9.0      | FASTA/FASTQ file utilities |
+| **kraken2**              | 2.1.3      | Taxonomic classification (k-mer based) |
+| **minimap2**             | 2.28       | Long-read alignment |
+| **samtools**             | 1.21       | BAM/CRAM/SAM processing |
+| **blast**                | 2.16.0     | Sequence similarity search |
+| **krona**                | 2.8.1      | Interactive hierarchical visualization |
+| **parallel**             | 20241222   | Parallelized execution of tasks |
+| **taxonkit**             | 0.18.0     | Taxonomic lineage operations |
+| **bbmap**                | 39.17      | Read mapping and QC utilities |
+| **bcftools**             | 1.21       | Variant calling and filtering |
+| **deeptools**            | 3.5.5      | NGS data visualization |
+| **ncbi-genome-download** | 0.3.3      | Batch genome downloads from NCBI RefSeq |
+| **fastp**                | 0.24.0     | FASTQ QC and preprocessing |
+| **bowtie2**              | 2.5.4      | Short-read alignment (host removal) |
+| **hisat2**               | 2.2.1      | Short-read alignment (host removal, splice-aware) |
+| **SparK**                | 2.6.2_1    | Coverage plotting |
 
 ## Disclaimer
 * The users are responsible for all risks associated with the use of and the data transfer to PATHDET. PATHDET makes no legal liability for any claims or damages arising from the use of PATHDET.
