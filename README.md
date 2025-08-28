@@ -240,7 +240,6 @@ Please cite the following if you are using PATHDET for short-read:
 Please cite the following if you are using PATHDET for long-read:
 [Horiba K, Torii Y, Aizawa Y, Yamaguchi M, Haruta K, Okumura T, Suzuki T, Kawano Y, Kawada JI, Hara S, Saitoh A, Giske CG, Ogi T, Ito Y. Performance of Nanopore and Illumina metagenomic sequencing for pathogen detection and transcriptome analysis in infantile central nervous system infections. Open Forum Infect Dis. 2022 ofab504. doi: 10.1093/ofid/ofac504 .](url)
 
-<br>
 ## Dependencies
 
 PATHDET requires a conda environment with the following software tools installed.  
