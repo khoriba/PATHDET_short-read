@@ -129,7 +129,7 @@ Before running, make sure the conda environment is active:
 ```
 $ conda activate pathdet_env
 ```
-####Command
+#### Command
 ```
 (pathdet_env)$ pathdet_short.sh \
   -1 sample_R1.fastq.gz \
@@ -138,7 +138,7 @@ $ conda activate pathdet_env
   -t 16 \
   -s 10000
 ```
-####Option
+#### Option
 
 - `-1 <file>`  
   Path to **Read 1 FASTQ file** (required)
@@ -253,22 +253,6 @@ Please cite the following if you are using PATHDET for long-read:
 * The users are allowed to use PATHDET for academic and non-profit purposes but not commercial purposes.
 * Users’ personal information (e-mail address) is only used for the announcement of analysis submission and completion.
 * PATHDET deletes the sequence reads immediately after completion of the analyses and does not use or provide the sequence data for any other purposes.
-
-<br>
-
-## Contact
-Send e-mail to **pathdet.message@gmail.com**
-
-```
-Tweets by pathdet
-```
-
-<br>
-
-## Web server hosting
-![](https://pathdet.hgc.jp/files/static/images/HGC_logo_L.png)
-
-<br>
 
 ![](https://pathdet.hgc.jp/files/static/images/footer.png)
 <span style="color:gray;"><span style="font-size:70%;">Copyright © 2019 Department of Genetics, Research Institute of Environmental Medicine, Nagoya University All Rights Reserved.</span>
