@@ -277,4 +277,3 @@ These dependencies ensure reproducibility of the pipeline.
 * PATHDET deletes the sequence reads immediately after completion of the analyses and does not use or provide the sequence data for any other purposes.
 
 ![](https://pathdet.hgc.jp/files/static/images/footer.png)
-<span style="color:gray;"><span style="font-size:70%;">Copyright © 2019 Department of Genetics, Research Institute of Environmental Medicine, Nagoya University All Rights Reserved.</span>
