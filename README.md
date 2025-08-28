@@ -235,10 +235,10 @@ These are stored under `sample_fRep/` and `sample_bRep/` directories.
 
 ## Citation
 Please cite the following if you are using PATHDET for short-read:
-[Horiba K, Torii Y, Okumura T, Takeuchi S, Suzuki T, Kawada JI, Muramatsu H, Takahashi Y, Ogi T, Ito Y. Next-Generation Sequencing to Detect Pathogens in Pediatric Febrile Neutropenia: A Single-Center Retrospective Study of 112 Cases. Open Forum Infect Dis. 2021 May 4;8(11):ofab223. doi: 10.1093/ofid/ofab223.](url)
+[Horiba K, Torii Y, Okumura T, Takeuchi S, Suzuki T, Kawada JI, Muramatsu H, Takahashi Y, Ogi T, Ito Y. Next-Generation Sequencing to Detect Pathogens in Pediatric Febrile Neutropenia: A Single-Center Retrospective Study of 112 Cases. Open Forum Infect Dis. 2021 May 4;8(11):ofab223. doi: 10.1093/ofid/ofab223.](https://doi.org/10.1093/ofid/ofab223)
 
 Please cite the following if you are using PATHDET for long-read:
-[Horiba K, Torii Y, Aizawa Y, Yamaguchi M, Haruta K, Okumura T, Suzuki T, Kawano Y, Kawada JI, Hara S, Saitoh A, Giske CG, Ogi T, Ito Y. Performance of Nanopore and Illumina metagenomic sequencing for pathogen detection and transcriptome analysis in infantile central nervous system infections. Open Forum Infect Dis. 2022 ofab504. doi: 10.1093/ofid/ofac504 .](url)
+[Horiba K, Torii Y, Aizawa Y, Yamaguchi M, Haruta K, Okumura T, Suzuki T, Kawano Y, Kawada JI, Hara S, Saitoh A, Giske CG, Ogi T, Ito Y. Performance of Nanopore and Illumina metagenomic sequencing for pathogen detection and transcriptome analysis in infantile central nervous system infections. Open Forum Infect Dis. 2022 ofab504. doi: 10.1093/ofid/ofac504 .](https://doi.org/10.1093/ofid/ofac504)
 
 ## Dependencies
 
