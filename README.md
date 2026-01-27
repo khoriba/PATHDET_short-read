@@ -42,7 +42,7 @@ The following databases are required. Place them under a common directory (e.g. 
 
 - **Kraken2 indices**  
   - Human (GRCh38)  
-  - PlusPF (2024/12/28 version)  
+  - PlusPF (2024/12/28 version)
 
 - **BLAST databases**  
   - `nt`  
@@ -66,6 +66,13 @@ Edit the variable `datadir` in the script `pathdet_short.sh` (around line 67) to
 ## Database
 datadir="/path/to/datadir"   # <-- change this line
 ```
+- Building the databases required for PATHDET is computationally intensive, requiring large amounts of memory and substantial execution time. Using pre-built databases enables the utilisation of a relatively new database even without computational resources.
+Pre-built database sources
+Kraken2 databases (pre-built): PATHDET uses the Kraken2 PlusPF database.
+Available from: <https://benlangmead.github.io/aws-indexes/k2>
+BLAST nt database (pre-built) :PATHDET expects the nt.*.tar.gz archive format.
+Available from: <https://ftp.ncbi.nlm.nih.gov/blast/db/>
+
 - If you set up the environment manually, follow the steps below.
 
 
